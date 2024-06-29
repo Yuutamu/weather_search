@@ -14,7 +14,7 @@ const App: React.FC = () => {
       setWeather(data);
       setError(null);
     } catch (error) {
-      setError('Failed to fetch weather data');
+      setError('該当する都市のデータは取得できませんでした。');
       setWeather(null);
     }
   };

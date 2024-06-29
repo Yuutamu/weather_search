@@ -21,8 +21,12 @@ export const getWeather = async (city: string): Promise<WeatherData> => {
   const response = await fetch(`${BASE_URL}?q=${city}&appid=${API_KEY}&units=metric`);
 
   if (!response.ok) {
-    throw new Error('該当する都市のデータが取得できませんでした。');
-  }
+    if (response.status === 404) {
+      throw new Error('該当する都市のデータが取得できませんでした。');
+      } else {
+        throw new Error();
+      }
+    }
 
   const data = await response.json();
 
