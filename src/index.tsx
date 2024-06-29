@@ -1,8 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom/client'; // メモ：React 18 の記述方法。これに合わせてReactDOM.createRootの記述方法も変更
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals'; // メモ：利用していないので削除予定（そもそも何が嬉しいのか調べる予定）
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -12,5 +11,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
-reportWebVitals(); // メモ：利用していないので削除予定（そもそも何が嬉しいのか調べる予定）
