@@ -1,12 +1,13 @@
 # Weather App
-
-[OpenWeather](https://openweathermap.org/api) のAPIを利用して作成された 天気webアプリケーション
+React, Typescriptを用いて作成された、天気APIを利用して日本全国の主要都市の天気情報を表示するwebアプリケーション
 
 ## コマンド
--  上記のサイトにてAPIの発行後に、`npm start` にて立ち上げ可能です。
+-  APIの発行後に、`npm start` にて立ち上げ可能です。
+
+## API
+- [OpenWeather](https://openweathermap.org/api)
 
 
 ## 利用技術
-
 - React
 - TypeScript
