@@ -3,8 +3,8 @@
 
 body {
   background-color: #bae2fd;
-  margin: 0; /* 余白をなくすため */
-  font-family: Arial, sans-serif; /* フォント */
+  margin: 0; 
+  font-family: Arial, sans-serif; 
 }
 
 button {
@@ -16,7 +16,7 @@ button {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  font-family: 'Noto Sans JP', sans-serif; /* Noto Sans JPを適用 */
+  font-family: 'Noto Sans JP', sans-serif; 
   font-weight: 600;
 }
 
@@ -31,12 +31,12 @@ div {
 
 h1 {
   color: #4C4F52;
-  font-family: 'Noto Sans', sans-serif; /* Noto Sansを適用 */
+  font-family: 'Noto Sans', sans-serif; 
   font-weight: 800;
 }
 
 .weather-container {
-  background-color: #f6f6f6; /* 背景色 */
+  background-color: #f6f6f6; 
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -50,19 +50,19 @@ h1 {
 .weather-container img {
   width: 100px;
   height: 100px;
-  margin-right: 20px; /* 画像とテキストの間に余白を追加 */
+  margin-right: 20px; 
 }
 
 .weather-container h2 {
   color: #4C4F52;
   font-size: 2em;
   margin-bottom: 10px;
-  font-family: 'Noto Sans JP', sans-serif; /* Noto Sans JPを適用 */
+  font-family: 'Noto Sans JP', sans-serif; 
 }
 
 .weather-container p {
   color: #4C4F52;
   font-size: 1.2em;
   margin: 5px 0;
-  font-family: 'Noto Sans JP', sans-serif; /* Noto Sans JPを適用 */
+  font-family: 'Noto Sans JP', sans-serif; 
 }

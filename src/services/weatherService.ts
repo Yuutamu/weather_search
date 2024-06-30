@@ -1,4 +1,4 @@
-const API_KEY = '9fe78233457b1c320fcc3ac3a6f42c38'; // OpenWeatherMapのAPIキーをここに入力
+const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
 export interface WeatherData {
@@ -30,8 +30,6 @@ export const getWeather = async (city: string): Promise<WeatherData> => {
     }
 
   const data = await response.json();
-
-  console.log(data); // メモ：取得JSON。後で消す
 
   return data;
 };
