@@ -1,18 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap');
+
+body {
+  background-color: #bae2fd;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
 button {
   margin: 5px;
   padding: 10px;
-  background-color: #007bff;
-  color: white;
+  width: 80px;
+  background-color: #e7e7e7;
+  color: #4C4F52;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 600;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #b0b0b0;
 }
 
 div {
   text-align: center;
   margin-top: 20px;
+}
+
+h1 {
+  color: #4C4F52;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 800;
+}
+
+.weather-container {
+  background-color: #f6f6f6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.weather-container img {
+  width: 100px;
+  height: 100px;
+  margin-right: 30px;
+}
+
+.weather-container h2 {
+  color: #434547;
+  font-size: 2em;
+  margin-bottom: 10px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.weather-container .weather-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-container p {
+  color: #686d72;
+  font-size: 1.2em;
+  margin: 5px 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: left;
 }

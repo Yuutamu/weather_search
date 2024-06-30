@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './App.css';
 import { getWeather, WeatherData } from './services/weatherService';
 import { weatherTranslations } from './services/weatherTranslations';
 import { cityTranslations } from './services/cityTranslations';
@@ -21,17 +22,14 @@ const App: React.FC = () => {
     }
   };
 
-  // 天気条件の日本語翻訳関数
   const getTranslatedWeather = (weatherCondition: string) => {
-    return weatherTranslations[weatherCondition.toLowerCase()] || weatherCondition; // メモ：対応する日本語が無かった場合は元のkey(英語表記)で返す
+    return weatherTranslations[weatherCondition.toLowerCase()] || weatherCondition;
   };
 
-  // 天気アイコンURLの生成関数
   const getIconUrl = (icon: string) => {
     return `http://openweathermap.org/img/wn/${icon}.png`;
   };
 
-  // 都市名の日本語対応関数
   const getTranslatedCity = (city: string) => {
     return cityTranslations[city] || city;
   };
@@ -50,16 +48,16 @@ const App: React.FC = () => {
         ))}
       </div>
       {weather && (
-        <div>
-          <h2>{getTranslatedCity(weather.name)}</h2>
-          <p>温度: {weather.main.temp}°C</p>
-          <p>天気: {getTranslatedWeather(weather.weather[0].description)}</p>
-          <p>風速: {weather.wind.speed} m/s</p>
-          <p>風向き: {weather.wind.deg}°</p>
-          <p>湿度: {weather.main.humidity}%</p>
-          <p>
-            <img src={getIconUrl(weather.weather[0].icon)} alt={weather.weather[0].description} />
-          </p>
+        <div className="weather-container">
+          <img src={getIconUrl(weather.weather[0].icon)} alt={weather.weather[0].description} />
+          <div className="weather-details">
+            <h2>{getTranslatedCity(weather.name)}</h2>
+            <p>温度: {weather.main.temp}°C</p>
+            <p>天気: {getTranslatedWeather(weather.weather[0].description)}</p>
+            <p>風速: {weather.wind.speed} m/s</p>
+            <p>風向き: {weather.wind.deg}°</p>
+            <p>湿度: {weather.main.humidity}%</p>
+          </div>
         </div>
       )}
       {error && <p>{error}</p>}

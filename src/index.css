@@ -1,13 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #bae2fd;
+  margin: 0; /* 余白をなくすため */
+  font-family: Arial, sans-serif; /* フォント */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button {
+  margin: 5px;
+  padding: 10px;
+  width: 80px;
+  background-color: #e7e7e7;
+  color: #4C4F52;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Noto Sans JP', sans-serif; /* Noto Sans JPを適用 */
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #b0b0b0;
+}
+
+div {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h1 {
+  color: #4C4F52;
+  font-family: 'Noto Sans', sans-serif; /* Noto Sansを適用 */
+  font-weight: 800;
+}
+
+.weather-container {
+  background-color: #f6f6f6; /* 背景色 */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.weather-container img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px; /* 画像とテキストの間に余白を追加 */
+}
+
+.weather-container h2 {
+  color: #4C4F52;
+  font-size: 2em;
+  margin-bottom: 10px;
+  font-family: 'Noto Sans JP', sans-serif; /* Noto Sans JPを適用 */
+}
+
+.weather-container p {
+  color: #4C4F52;
+  font-size: 1.2em;
+  margin: 5px 0;
+  font-family: 'Noto Sans JP', sans-serif; /* Noto Sans JPを適用 */
 }
